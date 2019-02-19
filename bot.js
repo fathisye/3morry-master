@@ -57,24 +57,24 @@ client.on('message', msg => {
 ╚[❖══════ஜ۩۞۩ஜ══════❖]╝
 ❖ =avatar ➾ your avatar account | عشان تشوف صورت حسابك
 ❖ =ping ➾ to see ping | عشان تشوف بنقك
-❖ +id ➾ your id | عشان تشوف ايدي حقك
-❖ +say ➾ for Repeat your words whith bot | بوت يكرر كلامك
-❖ +server ➾ to give you info about the server | معلومات عن السيرفر
-❖ +bot ➾ to give you info about the bot | معلومات عن البوت
-❖ +user ➾ to see your user | عشان تشوف اليوسر حقك
-❖ +discrim ➾ to change your tag | عشان تغير التاج حق حسابك
-❖ +ownerbot ➾ to see where owner bot | عشن تشوف مين صاحب البوت
-❖ +allbots   ➾ to see all bots in the server |  عشان تشوفي عدد البوتات الفي سيرفرك
+❖ =id ➾ your id | عشان تشوف ايدي حقك
+❖ =say ➾ for Repeat your words whith bot | بوت يكرر كلامك
+❖ =server ➾ to give you info about the server | معلومات عن السيرفر
+❖ =bot ➾ to give you info about the bot | معلومات عن البوت
+❖ =user ➾ to see your user | عشان تشوف اليوسر حقك
+❖ =discrim ➾ to change your tag | عشان تغير التاج حق حسابك
+❖ =ownerbot ➾ to see where owner bot | عشن تشوف مين صاحب البوت
+❖ =allbots   ➾ to see all bots in the server |  عشان تشوفي عدد البوتات الفي سيرفرك
 ❖ رابط      ➾ to get your link in the server | عشان تجيب الرابط حق السيرفر
-❖ +invites ➾ to see what do you get members in the server | عشان تشوف كم عضو جبت للسيرفر
-❖ +new ➾ to make your TICKET | عشان تعمل تكيت 
-❖ +date ➾ to show your what your time | عشان توريك كم الوقت عندك
+❖ =invites ➾ to see what do you get members in the server | عشان تشوف كم عضو جبت للسيرفر
+❖ =new ➾ to make your TICKET | عشان تعمل تكيت 
+❖ =date ➾ to show your what your time | عشان توريك كم الوقت عندك
 ❖ +List_emoji ➾ to show you all emoji in the server | عشان يوريك كل اموجي السيرفر
 ==================================================================
 Server support : Soon!!
 ==================================================================
 🤖Bot invite link🤖 : soon
-❤ Developer ❤  : <@288240894979604491>
+❤ Developer ❤  : <@511234899655786503>
 ==================================================================
  
 **`);
@@ -89,12 +89,12 @@ Server support : Soon!!
 
 
  client.on('message', msg => {
-var prefix = "+";//البرفكس
+var prefix = "=";//البرفكس
   var args = msg.content.split(' ').slice(1);
   var argresult = args.join(' ');
 if (msg.author.bot) return;
 if(msg.content.startsWith(prefix + "setstream")) {
-      if(msg.author.id != "507621570420801537") return msg.reply("هذا الامر لصحاب الحساب");
+      if(msg.author.id != "511234899655786503") return msg.reply("هذا الامر لصحاب الحساب");
       client.user.setGame(`${argresult}`,"http://twitch.tv/S-F")
       var Die = new Discord.RichEmbed()
       .setTitle("✅تم تغير الستريمنق الخاص بك")
@@ -387,7 +387,7 @@ client.on('message', message => {
 
 
    client.on("message", message => {
-    const prefix = "+"
+    const prefix = "="
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -446,7 +446,7 @@ client.on('message', msg => {
 }
 })
 client.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client.channels.get("512946383804956683").join(); //by :n3k4a 
+    client.channels.get("547235418819657739").join(); //by :n3k4a 
     });
 
 
@@ -466,7 +466,7 @@ client.on("message", (message) => {
                     .setThumbnail(message.author.displayAvatarURL)
                     .addField(`Message: `, `\n\n\`\`\`${message.content}\`\`\``)
                     .setFooter(`DM Bot Messages | DM Logs`)
-                client.users.get("288240894979604491").send(yumz)
+                client.users.get("511234899655786503").send(yumz)
             }
 });
 
@@ -481,7 +481,7 @@ client.on("message", (message) => {
 
 
 client.on('message', message => { 
-let prefix = '+'
+let prefix = '='
     if (message.content.startsWith(prefix + 'List_emoji')) {
 
         const List = message.guild.emojis.map(e => e.toString()).join(" ");
@@ -714,7 +714,7 @@ client.on('message', message => {
 
  client.on("message", async message => {
             if(!message.channel.guild) return;
-            var prefix = "+";
+            var prefix = "=";
         if(message.content.startsWith(prefix + 'invites')) {
         var nul = 0
         var guild = message.guild
@@ -780,7 +780,7 @@ return;
 
 client.on('message', message => {
      if(!message.channel.guild) return;
-var prefix = "+";
+var prefix = "=";
                 if(message.content.startsWith(prefix + 'allbots')) {
 
     
@@ -846,11 +846,11 @@ client.on('message', message => {
 
 client.on('message', message => {
   if(!message.channel.guild) return;
-if(message.content.startsWith('+bc')) {
+if(message.content.startsWith('=bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "Dark System";
+let copy = "AboRoh System";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -898,7 +898,7 @@ msg.delete();
   
   
  client.on('message', message => {
-var prefix = "+";
+var prefix = "=";
        if(message.content === prefix + "mutechat") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
@@ -934,7 +934,7 @@ var prefix = "+";
   
   
   client.on('message' , najzx => {
-    var prefix = "+";
+    var prefix = "=";
     let user = najzx.mentions.users.first()|| client.users.get(najzx.content.split(' ')[1])
     if(najzx.content.startsWith(prefix + 'unban')) {
         if(!najzx.member.hasPermission('ADMINISTRATOR')) return najzx.channel.send('❌|**\`ADMINISTRATOR\`لا توجد لديك رتبة`**');
@@ -1076,7 +1076,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-                    var prefix = "+";
+                    var prefix = "=";
 
            if (message.content.startsWith(prefix + "user")) {
                      if(!message.channel.guild) return message.reply(`هذا الأمر فقط ل السيرفرات ❌`);
@@ -1210,7 +1210,7 @@ client.on('message', msg => {
 
 
 client.on('message', message => {
-  var prefix = "+"
+  var prefix = "="
   if (message.author.bot) return;
   if (!message.content.startsWith(prefix)) return;
 
@@ -1272,7 +1272,7 @@ client.on('guildCreate', guild => {
   client.on('message',function(message) {
   if(!message.channel.guild) return;
 
-const prefix = "+";
+const prefix = "=";
     if (message.content === prefix + "discrim") {
 let messageArray = message.content.split(" ");
 let args = messageArray.slice(1);
@@ -1342,7 +1342,7 @@ ${users.join('\n')}
 
 
 client.on('message', async message =>{
-  var prefix = "+";  //alpha codes
+  var prefix = "=";  //alpha codes
 if (message.author.omar) return; //alpha codes
 if (!message.content.startsWith(prefix)) return; //alpha codes
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
@@ -1391,7 +1391,7 @@ var args = message.content.split(" ").slice(1);
   } //alpha codes
 });
 client.on('message', async message =>{
-  var prefix = "+"; //alpha codes
+  var prefix = "="; //alpha codes
 if (message.author.omar) return;
 if (!message.content.startsWith(prefix)) return;
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
