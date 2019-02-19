@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '+'
+const prefix = '='
 
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`+help | Dark Server`,"http://twitch.tv/S-F")
+client.user.setGame(`+help |AboRoh`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -45,18 +45,18 @@ client.on('message', msg => {
 ╔[❖══════ஜ۩۞۩ஜ══════❖]╗
     Admin   ✻  Commands
 ╚[❖══════ஜ۩۞۩ஜ══════❖]╝
- ❖  +kick <mention > ➾ kick member from server
- ❖  +ban  <mention > ➾ ban member from server
- ❖  +mute < mention > ➾ mute member
- ❖  +unmute <mention> ➾ unmute member
- ❖  +bc <message> ➾ message all members in server
- ❖  +clear ➾ Clears the chat
- ❖  +setvoice ➾ to show Members in the rooms
+ ❖  =kick <mention > ➾ kick member from server
+ ❖  =ban  <mention > ➾ ban member from server
+ ❖  =mute < mention > ➾ mute member
+ ❖  =unmute <mention> ➾ unmute member
+ ❖  =bc <message> ➾ message all members in server
+ ❖  =clear ➾ Clears the chat
+ ❖  =setvoice ➾ to show Members in the rooms
 ╔[❖══════ஜ۩۞۩ஜ══════❖]╗
    General  ✻ Commands
 ╚[❖══════ஜ۩۞۩ஜ══════❖]╝
-❖ +avatar ➾ your avatar account | عشان تشوف صورت حسابك
-❖ +ping ➾ to see ping | عشان تشوف بنقك
+❖ =avatar ➾ your avatar account | عشان تشوف صورت حسابك
+❖ =ping ➾ to see ping | عشان تشوف بنقك
 ❖ +id ➾ your id | عشان تشوف ايدي حقك
 ❖ +say ➾ for Repeat your words whith bot | بوت يكرر كلامك
 ❖ +server ➾ to give you info about the server | معلومات عن السيرفر
